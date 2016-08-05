@@ -3,13 +3,60 @@
 }
 
 .medium-usage {
-  color: black;
+  color: lemonchiffon;
 }
 
 .high-usage {
   color: red;
 }
 
-body{ background-color: #9ACD32 }
+body{
+  background-color: #00d2ff;
+}
 
-section{ background-color: #cccccc; }
+section{
+  background-color: #53346D;
+  font-size: 26px;
+  text-align: center;
+}
+
+h1{
+  font-weight: 900;
+}
+
+h2{
+  font-weight: 800;
+}
+
+h1, h2, section, body {
+  color: lemonchiffon;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+input[type=text]{
+  font-size: 16px;
+  padding: 15px 32px;
+}
+input[type=submit]{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

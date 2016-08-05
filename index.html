@@ -11,14 +11,15 @@
       <h1>Current temperature: <span id="temperature"></span>
       <h2 id="city-temperature"></h2>
       <p>
-        <button id="temperature-up">+</button>
-        <button id="temperature-down">-</button>
+        <button id="temperature-up"> + </button>
+        <button id="temperature-down"> - </button>
         <br>
         <button id="temperature-reset">reset</button>
         <br>
       </p>
     </section>
     <section>
+      <br>
     power saving mode is <span id="power-saving-status"></span>
     <br>
     <button id="powersaving-on">PSM on</button>
@@ -27,7 +28,8 @@
   </section>
     <section>
       <form class="city-form">
-        <input type="text" name="q" placeholder="City name">
+        <br>Enter a city name please<br>
+        <input type="text" name="q" placeholder="City name" autocomplete="off">
         <input type="submit" name="submit" value="search">
       </form>
     </section>
