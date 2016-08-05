@@ -38,15 +38,18 @@ Thermostat.prototype.isPowerSavingModeOn = function () {
 
 Thermostat.prototype.switchPowerSavingModeOff = function() {
   this.powerSavingMode = false;
+  //return 'low-usage';
 };
 
 Thermostat.prototype.switchPowerSavingModeOn = function () {
   this.powerSavingMode = true;
+  //return 'high-usage';
 };
 
 Thermostat.prototype.isMaximumTemperature = function() {
   if (this.isPowerSavingModeOn() === false) {
     return this.temperature === this.MAX_LIMIT_PSM_OFF;
+
   }
   return this.temperature === this.MAX_LIMIT_PSM_ON;
 };

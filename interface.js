@@ -26,13 +26,19 @@ $(document).ready(function(){
     thermostat.switchPowerSavingModeOn();
     $('#power-saving-status').text('on')
     updateTemperature();
+    changeColorPsm('green');
   });
 
   $('#powersaving-off').click(function(){
     thermostat.switchPowerSavingModeOff();
     $('#power-saving-status').text('off')
     updateTemperature();
+    changeColorPsm('red');
   });
+
+  function changeColorPsm(color){
+    $("#power-saving-status").css("color", color);
+  };
 
   $('form').on("submit", function(event){
     event.preventDefault();
@@ -46,7 +52,7 @@ $(document).ready(function(){
     var units = '&units=metric';
     $.get(url + city + token + units, function(data)
     {
-      $('#city-temperature').text(data.main.temp);
+      $('#city-temperature').text(data.name+" : "+data.main.temp);
     });
   }
 
